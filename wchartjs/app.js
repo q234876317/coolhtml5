@@ -1,0 +1,20 @@
+//app.js
+App({
+  onLaunch: function(options) {
+    console.log(wx.canIUse('openBluetoothAdapter'))
+    console.log("launch")
+    console.log(options)
+  },
+  onShow:function(options){
+    console.log("show")
+    console.log(options)
+  },
+  onHide:function(options){
+    console.log("hide")
+    console.log(options)
+  },
+  onError:function(options){
+    console.log('error')
+    console.log(options)
+  }
+})

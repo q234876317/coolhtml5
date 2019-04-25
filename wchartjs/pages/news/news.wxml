@@ -1,0 +1,21 @@
+<view wx:if="{{list.length>0}}" class="list">
+  <view class="item" wx:for="{{list}}" wx:key="id" wx:for-item="item">
+    <view class="img-container">
+      <image mode="aspectFill" src="{{fileServer+item.logo}}"></image>
+    </view>
+    <view class="content">
+      <view class="title">{{item.title}}</view>
+      <view class="des">{{item.des}}</view>
+    </view>
+    <button class="link-demo"
+    bindtap='copyText' data-url="{{item.url}}">
+    复制
+    </button>
+  </view>
+</view>
+<view wx:else class="noneData">
+    <view wx:if="{{isLoading}}">
+    加载中...
+    </view>
+    <view wx:else>很抱歉，没有数据！</view>
+</view>

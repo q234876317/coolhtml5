@@ -1,0 +1,53 @@
+{
+  "name": "coolhtml5-koa",
+  "version": "1.0.0",
+  "description": "this is a koa project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon run.js",
+    "start": "cross-env NODE_ENV=production node run.js "
+  },
+  "keywords": [
+    "koa",
+    "coolhtml5"
+  ],
+  "author": "liam",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "dblite": "^1.0.1",
+    "debug": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-ejs": "^4.2.0",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.1",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "externals-dependencies": "^1.0.4",
+    "nodemon": "^1.18.11",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}

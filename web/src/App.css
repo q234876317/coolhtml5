@@ -1,0 +1,65 @@
+.container{
+    width:100%;
+}
+.itemContainer{
+    padding:10px;
+}
+.itemContainer:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.item{
+    position:relative;
+    box-sizing: content-box;
+    text-align: center;
+    padding:3px;
+    width: 200px;
+    float: left;
+    box-shadow: 9px 9px 2px #eee;
+    border:1px solid #eee;
+}
+.item .item-info{
+    width:100%;
+}
+.item-info .title{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    overflow: hidden;
+}
+.item-info .logo{
+    width:200px;
+    height:200px;
+    overflow:hidden;
+}
+.item-info .logo img{
+    width:100%;
+}
+.item .qr-code{
+    display:none;
+    position:absolute;
+    margin-top:-60px;
+    margin-left:-60px;
+    overflow: hidden;
+    left:50%;
+    top:50%;
+
+    width:120px;
+    height:120px;
+
+    padding: 3px;
+    box-sizing: border-box;
+}
+.item .hid{
+    display:none;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,.3)
+}
+.item:hover .hid,.item:hover .qr-code{
+    display:block;
+}

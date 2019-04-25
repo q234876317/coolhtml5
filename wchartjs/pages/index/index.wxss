@@ -1,0 +1,16 @@
+.my-btn{
+  float:left;
+  width:300rpx;
+  margin-left:50rpx;
+  margin-top:10rpx;
+  box-sizing:border-box;
+  font-size:32rpx;
+  text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+  display: inline-block;
+  height: 85rpx;
+  background-color: #fff;
+  color: #2277da;
+  line-height: 85rpx;
+}

@@ -1,0 +1,4 @@
+<view>
+    <button  wx:for="{{list}}" wx:key="id" wx:for-index="idx" wx:for-item="item" data-id="{{item.id}}"
+    class="my-btn" bindtap="goToNews">{{item.name}}</button>
+</view>

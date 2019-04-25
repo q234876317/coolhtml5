@@ -1,0 +1,12 @@
+/* tslint:disable */
+import './add'
+import './category'
+import './delete'
+import './edit'
+import './eye-off'
+import './eye-on'
+import './hamburger'
+import './link'
+import './news'
+import './password'
+import './user'
