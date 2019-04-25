@@ -31,6 +31,7 @@ export default class App extends  Component {
           title: item.title,
           des: item.des,
           logo: FILESERVER + item.logo,
+          url:item.url,
         }
         let cur_category = categories.find(item_c => item_c.id === item.category_id) || {key: 0, name: '其他'}
         res_item.tag = cur_category.name

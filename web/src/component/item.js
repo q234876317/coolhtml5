@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export default class Item extends Component{
     render() {
-        return (<div className="item">
+        return (<a className="item" href={this.props.url}>
             <div className="item-info">
                 <div className="logo"><img alt='' src={this.props.logo}/></div>
                 <div className="title">{this.props.title}</div>
@@ -13,7 +13,7 @@ export default class Item extends Component{
             <div className="qr-code">
                 <QrCode size={120} value={this.props.url}/>
             </div>
-        </div>)
+        </a>)
     }
 }
 Item.propTypes={
